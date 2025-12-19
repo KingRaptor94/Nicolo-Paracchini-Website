@@ -17680,32 +17680,36 @@ footer {
 }
 
 .intro {
-  position: relative;
-  background-image: url("../img/C1.png");
-  background-repeat: no-repeat;
-  background-position: center 25%;  /* più bassa rispetto a 20% */
-  background-size: 100%;            /* leggero zoom */
-  color: white;
-  min-height: 50vh;                 /* un po’ più alta, così “entra” sotto il resto */
-  display: flex;
-  align-items: flex-end;
-  padding: 0;
-  z-index: 0;
+    position: relative;
+    background-image: url("../img/C1.png");
+    background-repeat: no-repeat;
+    background-position: center 25%;
+    /* più bassa rispetto a 20% */
+    background-size: 100%;
+    /* leggero zoom */
+    color: white;
+    min-height: 50vh;
+    /* un po’ più alta, così “entra” sotto il resto */
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+    z-index: 0;
 }
 
 /* Nessun overlay */
 .intro::before {
-  content: none;
+    content: none;
 }
 
-.intro > .container {
-  position: relative;
-  z-index: 2;
-  padding-bottom: 40px;
+.intro>.container {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 40px;
 }
 
 .intro h1 {
-  margin-top: 80px;  /* puoi abbassare se serve */
+    margin-top: 80px;
+    /* puoi abbassare se serve */
 }
 
 
@@ -17804,7 +17808,7 @@ footer {
 
 /* Spazio verticale tra blocchi servizi e sezioni dettagliate */
 .section-detail {
-    padding: 30px ;
+    padding: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.06);
     margin-top: 40px;
     /* stacca dalla sezione precedente */
@@ -17922,22 +17926,22 @@ footer {
 
 /* Testo colonna sinistra sezione music */
 #music-service .music-text p {
-  font-size: 1.05rem;
+    font-size: 1.05rem;
 }
 
 @media (min-width: 992px) {
-  #music-service .music-text p {
-    font-size: 1.2rem;
-    max-width: 520px;
-  }
+    #music-service .music-text p {
+        font-size: 1.2rem;
+        max-width: 520px;
+    }
 }
 
 /* Bio sotto carosello */
 .recording-bio {
-  font-size: 0.98rem;
-  line-height: 1.7;
-  color: #333333;
-  max-width: 420px;
+    font-size: 0.98rem;
+    line-height: 1.7;
+    color: #333333;
+    max-width: 420px;
 }
 
 #music-service .col-lg-6.col-md-6 p {
@@ -18050,6 +18054,7 @@ footer {
     border-radius: 36px;
 
 }
+
 /* Angoli smussati al contenitore del carosello */
 #studioCarousel {
     border-radius: 16px;
@@ -18091,6 +18096,7 @@ footer {
     border-radius: 36px;
 
 }
+
 /* Angoli smussati al contenitore del carosello */
 #gameCarousel {
     border-radius: 16px;
@@ -18117,345 +18123,359 @@ footer {
 }
 
 .colored-microtitles {
-  position: relative;
-  display: inline-block;
-  color: #5cb00c;
-  font-weight: 700;
-  letter-spacing: 0.03em;
+    position: relative;
+    display: inline-block;
+    color: #5cb00c;
+    font-weight: 700;
+    letter-spacing: 0.03em;
 }
 
 /* Underline animata */
 .colored-microtitles::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, #5cb00c, #a6ffcb);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.25s ease-out;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #5cb00c, #a6ffcb);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease-out;
 }
 
 /* Hover: underline si disegna */
 .colored-microtitles:hover::after {
-  transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 /* ===== PORTFOLIO GRID ===== */
 #portfolio-filters {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 #portfolio {
-  padding-top: 60px;
-  padding-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 #portfolio-filters {
-  text-align: center;
-  margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 #portfolio-filters #filters {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 #portfolio-filters #filters li {
-  display: inline-block;
-  margin: 0 10px;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 #portfolio-filters #filters a {
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 1px;
-  color: #aaa;
-  cursor: pointer;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #aaa;
+    cursor: pointer;
 }
 
 #portfolio-filters #filters a.active,
 #portfolio-filters #filters a:hover {
-  color: #fff;
+    color: #fff;
 }
 
 /* Griglia lavori: 3 colonne più distanziate */
 #portfolio .grid {
-  margin-left: -10px;
-  margin-right: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 #portfolio .grid .entry.work-entry {
-  position: relative;
-  overflow: hidden;
-  /* 3 per riga con margini */
-  width: calc(33.333% - 20px);
-  margin: 0 10px 24px 10px;
+    position: relative;
+    overflow: hidden;
+    /* 3 per riga con margini */
+    width: calc(33.333% - 20px);
+    margin: 0 10px 24px 10px;
 }
 
 /* box immagine PIÙ BASSO */
 #portfolio .entry-image.imageBG {
-  width: 100%;
-  padding-top: 55%;         /* prima 75%: ora card più basse */
-  background-size: cover;
-  background-position: center;
+    width: 100%;
+    padding-top: 55%;
+    /* prima 75%: ora card più basse */
+    background-size: cover;
+    background-position: center;
 }
 
 /* overlay hover */
 .work-entry-hover {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.7);
-  opacity: 0;
-  transition: opacity 0.3s ease;
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .entry.work-entry:hover .work-entry-hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 .work-entry-content {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
 }
 
 /* testo più compatto */
 .work-entry-title {
-  font-weight: 600;
-  margin-bottom: 5px;
-  font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
 }
 
 .work-entry-cat {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  opacity: 0.8;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
 }
 
 /* Spaziatura orizzontale + verticale tra le card */
 #portfolio .grid .entry.work-entry {
-  width: 260px !important;     /* o 280px se le vuoi un filo più grandi */
-  height: 260px !important;
-  margin: 0 15px 30px 15px !important;  /* 30px spazio verticale */
+    width: 260px !important;
+    /* o 280px se le vuoi un filo più grandi */
+    height: 260px !important;
+    margin: 0 15px 30px 15px !important;
+    /* 30px spazio verticale */
 }
 
 /* Immagine che riempie la card */
 #portfolio .entry-image.imageBG {
-  width: 100% !important;
-  height: 100% !important;
-  padding-top: 0 !important;
-  background-size: cover !important;
-  background-position: center !important;
+    width: 100% !important;
+    height: 100% !important;
+    padding-top: 0 !important;
+    background-size: cover !important;
+    background-position: center !important;
 }
 
 /* Effetto hover: solleva e aggiunge glow */
 #portfolio .entry.work-entry {
-  box-shadow: 0 7x 15px rgba(0, 0, 0, 0.6);
-  border-radius: 7px;
-  overflow: hidden;
+    box-shadow: 0 7x 15px rgba(0, 0, 0, 0.6);
+    border-radius: 7px;
+    overflow: hidden;
 }
 
 /* Immagine: zoom leggero */
 #portfolio .entry-image.imageBG {
-  transition: transform 0.25s ease, filter 0.25s ease;
+    transition: transform 0.25s ease, filter 0.25s ease;
 }
 
 #portfolio .entry.work-entry:hover .entry-image.imageBG {
-  transform: scale(1.1);          /* prima 1.15: molto più morbido */
-  filter: brightness(1.1);         /* leggermente più chiara / sbiadita */
+    transform: scale(1.1);
+    /* prima 1.15: molto più morbido */
+    filter: brightness(1.1);
+    /* leggermente più chiara / sbiadita */
 }
 
 /* Overlay più soft, non nero pieno */
 .work-entry-hover {
-  background: rgba(0, 0, 0, 0.35); /* invece di 0.7 */
-  transition: background 0.25s ease;
+    background: rgba(0, 0, 0, 0.35);
+    /* invece di 0.7 */
+    transition: background 0.25s ease;
 }
 
 #portfolio .entry.work-entry:hover .work-entry-hover {
-  background: rgba(0, 0, 0, 0.5);  /* appena accennato */
+    background: rgba(0, 0, 0, 0.5);
+    /* appena accennato */
 }
 
 
 #portfolio .entry.work-entry:hover {
-  transform: translateY(-4px);     /* tolta scale, solo lift */
-  box-shadow:
-    0 12px 28px rgba(0, 0, 0, 0.7),
-    0 0 10px rgba(92, 176, 12, 0.4);
+    transform: translateY(-4px);
+    /* tolta scale, solo lift */
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.7),
+        0 0 10px rgba(92, 176, 12, 0.4);
 }
 
 #portfolio .entry.work-entry:hover {
-  transform: translateY(-6px) scale(1.10);
-  box-shadow:
+    transform: translateY(-6px) scale(1.10);
+    box-shadow:
         0 0 22px rgba(108, 117, 125, 0.7),
         /* glow #6c757d */
         0 24px 70px rgba(0, 0, 0, 0.95);
 
 
 }
+
 /* Immagine normale */
 #portfolio .entry-image.imageBG {
-  width: 100% !important;
-  height: 100% !important;
-  padding-top: 0 !important;
-  background-size: cover !important;
-  background-position: center !important;
-  transition: filter 0.15s ease;
+    width: 100% !important;
+    height: 100% !important;
+    padding-top: 0 !important;
+    background-size: cover !important;
+    background-position: center !important;
+    transition: filter 0.15s ease;
 }
 
 /* Hover: sfocatura forte */
 #portfolio .entry.work-entry:hover .entry-image.imageBG {
-  filter: blur(7px) brightness(1);
+    filter: blur(7px) brightness(1);
 }
 
 
 /* 2) Solo il testo un po’ a destra */
 .work-entry-title,
 .work-entry-cat {
-  display: contents;
-  margin-left: 20px;          /* spingi le scritte a destra */
+    display: contents;
+    margin-left: 20px;
+    /* spingi le scritte a destra */
 }
 
 /* sposta leggermente tutto il blocco di card verso destra */
 #portfolio .grid {
-  margin-left: 120px !important;   /* aumenta/diminuisci a gusto: 20, 30, 50... */
+    margin-left: 120px !important;
+    /* aumenta/diminuisci a gusto: 20, 30, 50... */
 }
+
 #portfolio {
     margin-top: -80px;
 }
+
 .works-subtitle {
-  font-size: 0.95rem;
-  color: #aaaaaa;
-  margin: 0 0 20px 0;
-  letter-spacing: 0.03em;
-  margin-top: 20px;
+    font-size: 0.95rem;
+    color: #aaaaaa;
+    margin: 0 0 20px 0;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
 }
 
 .works-subtitle {
-  font-size: 0.95rem;
-  color: #aaaaaa;
+    font-size: 0.95rem;
+    color: #aaaaaa;
 }
 
 .works-subtitle .works-link {
-  color: #5cb00c;
-  text-decoration: underline;
+    color: #5cb00c;
+    text-decoration: underline;
 }
 
-service-card/* Titolo contact: verde e centrato (colored-title lo hai già) */
+service-card
+
+/* Titolo contact: verde e centrato (colored-title lo hai già) */
 #contact .colored-title {
-  color: #5cb00c;
-  font-weight: 800;
+    color: #5cb00c;
+    font-weight: 800;
 }
 
 /* Input/textarea: rotondi + glow */
 .contact-input {
-  border-radius: 999px;
-  border: 1px solid #5cb00c;
-  background-color: #111;
-  color: #fff;
-  padding: 10px 16px;
-  box-shadow: 0 0 10px rgba(92, 176, 12, 0.3);
-  transition: box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+    border-radius: 999px;
+    border: 1px solid #5cb00c;
+    background-color: #111;
+    color: #fff;
+    padding: 10px 16px;
+    box-shadow: 0 0 10px rgba(92, 176, 12, 0.3);
+    transition: box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
 }
 
 /* textarea più “pill” ma con più altezza */
 .contact-input#comment {
-  border-radius: 20px;
+    border-radius: 20px;
 }
 
 /* focus */
 .contact-input:focus {
-  outline: none;
-  border-color: #7cf01a;
-  box-shadow:
-    0 0 16px rgba(124, 240, 26, 0.8),
-    0 0 30px rgba(92, 176, 12, 0.7);
-  background-color: #151515;
+    outline: none;
+    border-color: #7cf01a;
+    box-shadow:
+        0 0 16px rgba(124, 240, 26, 0.8),
+        0 0 30px rgba(92, 176, 12, 0.7);
+    background-color: #151515;
 }
 
 /* bottone in linea con il resto del sito */
 .contact-btn {
-  border-radius: 999px;
-  padding: 8px 28px;
-  box-shadow:
-    0 0 16px rgba(124, 240, 26, 0.8),
-    0 0 30px rgba(92, 176, 12, 0.7);
-  border: 1px solid #5cb00c;
+    border-radius: 999px;
+    padding: 8px 28px;
+    box-shadow:
+        0 0 16px rgba(124, 240, 26, 0.8),
+        0 0 30px rgba(92, 176, 12, 0.7);
+    border: 1px solid #5cb00c;
 }
 
 /* Colonna form: allineata a sinistra, ma indipendente dal testo */
 .contact-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 /* Testo un filo più stretto per leggibilità */
 .contact-text {
-  margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Mobile: testo sopra, form sotto (gestito da Bootstrap) + padding comodo */
 @media (max-width: 767.98px) {
-  .contact-right {
-    margin-top: 1rem;
-  }
+    .contact-right {
+        margin-top: 1rem;
+    }
 }
 
 /* Colonna form: form full width */
 .contact-right .contact-form {
-  width: 100%;
+    width: 100%;
 }
 
 .contact-right .form-group {
-  width: 100%;
+    width: 100%;
 }
 
 .contact-right .form-control {
-  width: 100%;
+    width: 100%;
 }
 
 /* Mobile: un po' di respiro sopra */
 @media (max-width: 767.98px) {
-  .contact-right {
-    margin-top: 1rem;
-  }
+    .contact-right {
+        margin-top: 1rem;
+    }
 }
 
 .main-cta {
-  text-align: center;
+    text-align: center;
 }
 
 #game-audio-service .main-cta {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
-* Testo colonna sinistra sezione music */
-#game-audio-service .game-audio-text p {
-  font-size: 1.05rem;
+* Testo colonna sinistra sezione music */ #game-audio-service .game-audio-text p {
+    font-size: 1.05rem;
 }
 
 @media (min-width: 992px) {
- #game-audio-service .game-audio-text p {
-    font-size: 1.2rem;
-    max-width: 520px;
-  }
+    #game-audio-service .game-audio-text p {
+        font-size: 1.2rem;
+        max-width: 520px;
+    }
 }
 
 /* Bio sotto carosello */
 .recording-bio {
-  font-size: 0.98rem;
-  line-height: 1.7;
-  color: #333333;
-  max-width: 420px;
+    font-size: 0.98rem;
+    line-height: 1.7;
+    color: #333333;
+    max-width: 420px;
 }
 
 #game-audio-service .col-lg-6.col-md-6 p {
@@ -18484,192 +18504,471 @@ service-card/* Titolo contact: verde e centrato (colored-title lo hai già) */
 }
 
 .section-divider {
-  border: 0;
-  border-top: 1px solid #222; /* grigio leggero */
-  margin: 3rem 0;
+    border: 0;
+    border-top: 1px solid #222;
+    /* grigio leggero */
+    margin: 3rem 0;
 }
 
 #testimonials {
-  padding: 25px 0;
+    padding: 25px 0;
 }
 
 .testimonial-card {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 16px;
-  padding: 30px 40px;
-  max-width: 700px;
-  margin: 0 auto;
-  backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 30px 40px;
+    max-width: 700px;
+    margin: 0 auto;
+    backdrop-filter: blur(6px);
 }
 
 .testimonial-text {
-  font-size: 1.05rem;
-  font-weight: 300;
-  line-height: 1.7;
-  font-style: italic;
+    font-size: 1.05rem;
+    font-weight: 300;
+    line-height: 1.7;
+    font-style: italic;
 }
 
 .testimonial-author {
-  margin-top: 15px;
-  font-size: 0.95rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  opacity: 0.8;
+    margin-top: 15px;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0.8;
 }
 
 /* puntini del carosello un po' più “moderni” */
 #testimonialsCarousel .carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 #testimonialsCarousel .carousel-indicators .active {
-  background-color: #fff;
+    background-color: #fff;
 }
 
-.colored-grey{
-    color:grey;
+.colored-grey {
+    color: grey;
 }
+
 .site-footer {
-  padding: 30px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  background: #111; /* o il tuo background generale */
-  font-size: 0.9rem;
+    padding: 30px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    background: #111;
+    /* o il tuo background generale */
+    font-size: 0.9rem;
 }
 
 .site-footer p {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .footer-copy {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
 .footer-contact a {
-  color: inherit;
-  text-decoration: underline;
+    color: inherit;
+    text-decoration: underline;
 }
 
 .footer-contact a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .footer-social li a {
-  color: #fff;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+    color: #fff;
+    transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .footer-social li a:hover {
-  opacity: 0.8;
-  transform: translateY(-1px);
+    opacity: 0.8;
+    transform: translateY(-1px);
 }
 
 .footer-dm-link {
-  display: inline-block;
-  margin-top: 8px;
-  text-decoration: underline;
-  font-size: 0.9rem;
+    display: inline-block;
+    margin-top: 8px;
+    text-decoration: underline;
+    font-size: 0.9rem;
 }
 
 .footer-dm-link:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 /* su schermi piccoli, centra tutto */
 @media (max-width: 767.98px) {
-  .site-footer {
-    text-align: center;
-  }
+    .site-footer {
+        text-align: center;
+    }
 
-  .footer-social {
-    justify-content: center !important;
-  }
+    .footer-social {
+        justify-content: center !important;
+    }
 }
 
 .biofinale {
-  display: flex;
-  align-items: center;   /* centra verticalmente il <p> dentro la colonna */
+    display: flex;
+    align-items: center;
+    /* centra verticalmente il <p> dentro la colonna */
 }
 
 .biofinale .contact-text {
-  text-align: center;    /* se vuoi anche centrato orizzontalmente */
+    text-align: center;
+    /* se vuoi anche centrato orizzontalmente */
 }
 
 .ornamental-divider {
-  width: 240px;
-  margin: 3rem auto 2rem auto; /* un po’ di spazio sopra/sotto */
-  opacity: 0.7;
+    width: 240px;
+    margin: 3rem auto 2rem auto;
+    /* un po’ di spazio sopra/sotto */
+    opacity: 0.7;
 }
 
 .ornamental-divider svg {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
+
 .gothic-divider {
-  width: 260px;
-  margin: 3rem auto 2rem auto;
-  opacity: 0.85;
+    width: 260px;
+    margin: 3rem auto 2rem auto;
+    opacity: 0.85;
 }
 
 .gothic-divider svg {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 
-.greca{
+.greca {
     margin-top: -50px;
 }
 
-.finale{
+.finale {
     padding-top: 30px;
 }
 
 /* Mobile navbar: niente fixed/sticky, scorre insieme alla pagina */
 @media (max-width: 991.98px) {
-  .nav-main,
-  .nav-main .navbar {
-    position: static !important;
-  }
+
+    .nav-main,
+    .nav-main .navbar {
+        position: static !important;
+    }
 }
 
-.menospazio{
+.menospazio {
     margin-bottom: -40px;
 }
 
 body {
-  background: linear-gradient(
-    to right,
-    #070708 0%,
-    #101217 20%,
-    #14171c 50%,
-    #101217 80%,
-    #070708 100%
-  );
+    background: linear-gradient(to right,
+            #070708 0%,
+            #101217 20%,
+            #14171c 50%,
+            #101217 80%,
+            #070708 100%);
 }
 
 .testimonial-card {
-  min-height: 210px;          /* regola in base al design */
-  padding: 24px 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    min-height: 210px;
+    /* regola in base al design */
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .testimonial-text {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 12px;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
 }
+
+/* Card lavori: mantieni quadrato e aspetto desktop anche su mobile */
+.entry.work-entry {
+    width: 210px;
+    aspect-ratio: 1 / 1;
+    /* quadrato, invece di height fissa */
+    /* rimuovi eventuali height fisse precedenti */
+}
+
+.entry.work-entry .entry-image {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+/* ===== DESKTOP/TABLET (resta tutto com'è) ===== */
+/* (le regole che hai postato puoi lasciarle così) */
+
+
+/* ===== MOBILE: replica look desktop su #portfolio-mobile ===== */
+@media (max-width: 576px) {
+
+    /* card quadrate, stessa dimensione del desktop */
+    #portfolio-mobile .entry.work-entry {
+        width: 260px;
+        height: 260px;
+        margin: 0 0 24px 0;
+        /* solo spazio sotto, niente offset laterale */
+        box-shadow: 0 7px 15px rgba(0, 0, 0, 0.6);
+        border-radius: 7px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* immagine che riempie la card */
+    #portfolio-mobile .entry-image.imageBG {
+        width: 100%;
+        height: 100%;
+        padding-top: 0;
+        background-size: cover;
+        background-position: center;
+        transition:
+            transform 0.25s ease,
+            filter 0.25s ease;
+    }
+
+    /* overlay morbido */
+    #portfolio-mobile .work-entry-hover {
+        background: rgba(0, 0, 0, 0.35);
+        transition: background 0.25s ease;
+    }
+
+    /* hover: zoom + glow come desktop */
+    #portfolio-mobile .entry.work-entry:hover .entry-image.imageBG {
+        transform: scale(1.10);
+        filter: blur(7px) brightness(1);
+    }
+
+    #portfolio-mobile .entry.work-entry:hover .work-entry-hover {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    #portfolio-mobile .entry.work-entry:hover {
+        transform: translateY(-6px) scale(1.10);
+        box-shadow:
+            0 0 22px rgba(108, 117, 125, 0.7),
+            0 24px 70px rgba(0, 0, 0, 0.95);
+    }
+
+    /* testo: leggermente verso destra, come desktop ma senza rompere il layout mobile */
+    #portfolio-mobile .work-entry-title,
+    #portfolio-mobile .work-entry-cat {
+        display: block;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .intro {
+        background-position: center 35%;
+        /* alza un po' il fuoco */
+        background-size: 160%;
+        /* zoom forte rispetto al 100% desktop */
+        min-height: 60vh;
+        /* più alta, più immersiva */
+        margin-bottom: -280px;
+        /* niente gap sotto */
+        margin-top: -20px;
+        /* niente gap sopra */
+
+        padding: 0, 0;
+    }
+
+    /* se la sezione successiva ha classe space-md, stringi lo spazio in testa */
+    .space-md {
+        margin-top: 0;
+        padding-top: 16px;
+    }
+
+    .intro .container {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-main {
+        position: relative;
+        z-index: 50;
+    }
+
+    .intro {
+        background-position: center 40%;
+        background-size: 180%;
+        /* zoom forte */
+        min-height: 30vh;
+        /* più bassa: meno spazio percepito */
+        height: 30vh;
+        /* forziamo l'altezza */
+
+        margin: 0;
+        padding: 0;
+
+        position: relative;
+        z-index: 1;
+    }
+
+    .intro .container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .intro .row {
+        display: none;
+    }
+
+    /* se la sezione dopo usa space-md, azzera davvero il gap */
+    .space-md {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .section-detail {
+        margin-bottom: -70px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* contenitore col carosello: niente extra padding verticale */
+    .studio-carousel {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    /* tutte le slide stessa altezza */
+    #studioCarousel .carousel-inner {
+        height: 260px;
+        /* regola a gusto */
+    }
+
+    #studioCarousel .carousel-item {
+        height: 100%;
+    }
+
+    #studioCarousel .carousel-item img.section-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* riempie, taglia dove serve */
+    }
+
+    /* indicatori un po’ più vicini all’immagine su mobile */
+    #studioCarousel .carousel-indicators {
+        bottom: 4px;
+    }
+
+    /* riduci il gap dopo il carosello (quel <br> + margini) */
+    #studioCarousel {
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    .game-carousel {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    #gameCarousel .carousel-inner {
+        height: 260px;
+    }
+
+    #gameCarousel .carousel-item {
+        height: 100%;
+    }
+
+    #gameCarousel .carousel-item img.section-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #gameCarousel .carousel-indicators {
+        bottom: 4px;
+    }
+
+    #gameCarousel {
+        margin-bottom: 8px;
+    }
+
+    .menospazio {
+        margin-top: -40px;
+    }
+
+    .menospazio2 {
+        margin-top: -20px;
+    }
+
+
+    .menospazio3 {
+        margin-bottom: -20px;
+    }
+
+    .testimonialcont {
+        margin-bottom: 60px;
+    }
+
+    
+
+}
+@media (max-width: 576px) {
+  .submit-mobile-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .submit-mobile-row .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center !important;
+    align-items: center !important;
+  }
+
+  .submit-mobile-row .btn-main-cta {
+    display: inline-block;
+  }
+  
+}
+@media (max-width: 576px) {
+  .submit-mobile-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100%;
+  }
+
+  .submit-mobile-wrapper .btn-main-cta {
+    float: none !important;
+    margin: 0 auto !important;
+    display: inline-block;
+  }
+}
+
+
+@media (max-width: 576px) {
+  section.space-md.d-block.d-sm-none #portfolio-mobile .entry.work-entry {
+    width: 260px !important;
+    height: 260px !important;
+    margin: 0 0 24px 0 !important;
+  }
+}
+
 
 
 html,
 body {
     overflow-x: hidden;
 }
-
