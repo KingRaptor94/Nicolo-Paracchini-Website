@@ -18966,7 +18966,20 @@ body {
   }
 }
 
+@media (max-width: 576px) {
 
+  .biofinale {
+    display: none;
+  }
+  .titolocontatti{
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+.services-section {
+  position: relative;
+  z-index: 2;  /* più alto del wrapper dell’intro */
+}
+}
 
 html,
 body {
